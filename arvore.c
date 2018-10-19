@@ -16,6 +16,6 @@ Candidato* arvore_buscar(Arvore *a, int candNumero) {
   //Implemente
 }
 
-void arvore_imprime_pre_ordem(Arvore *a) {
+void arvore_imprime_em_ordem(Arvore *a) {
   //Implemente
 }

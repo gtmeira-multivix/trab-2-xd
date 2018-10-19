@@ -11,6 +11,6 @@ typedef struct _candidato {
 
 Arvore* arvore_inserir(Arvore *a, Candidato cand);
 Candidato* arvore_buscar(Arvore *a, int candNumero);
-void arvore_imprime_pre_ordem(Arvore *a);
+void arvore_imprime_em_ordem(Arvore *a);
 
 #endif
