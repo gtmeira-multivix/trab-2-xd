@@ -17,4 +17,4 @@ O trabalho pode ser feito em grupos de até 3 pessoas. Preencha abaixo o nome do
 
 1.  Renan Viecili - 1-1711734
 2.  João Domingues - 1-1711718
-3.  Integrante C - matrícula
+3.  Fabricio Galvani - 1-1711729
