@@ -6,16 +6,16 @@ Arvore* carregar_candidatos() {
   char linha[1024];
   FILE *arquivo = fopen("candidatos.csv", "r");
   
-  //Descartar cabeçalho do arquivo:
+  //Descartar cabeÃ§alho do arquivo:
   fgets(linha, 1024, arquivo);
   
-  //Número da coluna que contém cada informação (0 é a primeira):
+  //NÃºmero da coluna que contÃ©m cada informaÃ§Ã£o (0 Ã© a primeira):
   int campoNome = 18;
   int campoNumero = 16;
   int campoCargo = 14;
   int totalCampos = 57;
   
-  //Arvore que será preenchida;
+  //Arvore que serÃ¡ preenchida;
   Arvore *a = NULL;
   
   //Ler enquanto houver linhas:
@@ -34,7 +34,7 @@ Arvore* carregar_candidatos() {
     
     int i;
     for(i = 0; i < totalCampos; i++) {
-      //Verificar se o campo atual é algum dos que nos interessa:
+      //Verificar se o campo atual Ã© algum dos que nos interessa:
       if(i == campoNome) {
         strcpy(c.nome, token);
       } else if(i == campoNumero) {
@@ -43,24 +43,24 @@ Arvore* carregar_candidatos() {
         strcpy(c.cargo, token);
       }
       
-      //Avançar para o próximo token:
+      //AvanÃ§ar para o prÃ³ximo token:
       token = strtok(NULL, delimitadores);
     }
     
-    //Os campos do candidato foram preenchidos, vamos adicioná-lo à árvore:
+    //Os campos do candidato foram preenchidos, vamos adicionÃ¡-lo Ã  Ã¡rvore:
     a = arvore_inserir(a, c);
   }
   
-  //Retornar árvore construída:
+  //Retornar Ã¡rvore construÃ­da:
   return a;
 }
 
 void buscar_por_numero(Arvore *candidatos) {
-  //Implemente
+
 }
 
 void imprimir_todos(Arvore *candidatos) {
-  //Implemente
+
 }
 
 int main() {
